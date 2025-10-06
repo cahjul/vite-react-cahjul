@@ -43,3 +43,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.services a {
+  display: block;   /* 🔹 buat setiap link ambil satu baris */
+  margin: 0.3rem 0; /* 🔹 jarak antara domain */
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.services a:hover {
+  text-decoration: underline;
+}
