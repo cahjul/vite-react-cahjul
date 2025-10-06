@@ -57,38 +57,54 @@
   content: "" !important;
 }
 
-/* styling link */
-.services a {
+.services {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffa94d;
+}
+
+/* ✅ Auto grid responsive */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card style per domain */
+.service-grid a {
+  display: block;
   text-decoration: none;
   color: #61dafb;
   background: #242424;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  transition: background 0.2s ease;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  word-break: break-word;
 }
 
-.services a:hover {
+.service-grid a:hover {
   background: #333;
+  transform: translateY(-2px);
 }
 
-.service-links {
-  display: flex;
-  flex-direction: column; /* ✅ setiap anak ke baris baru */
-  align-items: center;
-  gap: 0.4rem; /* jarak antara baris */
-}
-
-.service-links a {
-  display: block; /* pastikan penuh baris */
-  background: #242424;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-  color: #61dafb;
-  text-decoration: none;
-  width: fit-content;
-  transition: background 0.2s ease;
-}
-
-.service-links a:hover {
-  background: #333;
+/* 🪄 Extra responsiveness */
+@media (max-width: 600px) {
+  .services h2 {
+    font-size: 1.2rem;
+  }
+  .service-grid a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
 }
