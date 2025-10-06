@@ -69,15 +69,15 @@ function App() {
       </div>
 
       <div className="services">
-        <h2>Other SHZL Services</h2>
-          {services.map((domain) => (
-            <li key={domain}>
-              <a href={`https://${domain}`} target="_blank" rel="noreferrer">
-                {domain}
-              </a>
-            </li>
-          ))}
-      </div>
+  <h1>Other SHZL Services</h1>
+  <div className="links">
+    {services.map((domain) => (
+      <a key={domain} href={`https://${domain}`} target="_blank" rel="noreferrer">
+        {domain}
+      </a>
+    ))}
+  </div>
+</div>
 
       <p className="read-the-docs">Click on the logos to learn more</p>
     </>
