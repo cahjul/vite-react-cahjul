@@ -73,18 +73,19 @@
 
 .service-links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
+  flex-direction: column; /* ✅ setiap anak ke baris baru */
+  align-items: center;
+  gap: 0.4rem; /* jarak antara baris */
 }
 
 .service-links a {
-  display: inline-block;
+  display: block; /* pastikan penuh baris */
   background: #242424;
   border-radius: 6px;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 1rem;
   color: #61dafb;
   text-decoration: none;
+  width: fit-content;
   transition: background 0.2s ease;
 }
 
