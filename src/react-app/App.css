@@ -43,3 +43,30 @@
 .read-the-docs {
   color: #888;
 }
+
+/* hilangkan bullet & spacing sepenuhnya */
+.services ul,
+.service-list {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* just to be sure even in nested resets */
+.services li::marker {
+  content: "" !important;
+}
+
+/* styling link */
+.services a {
+  text-decoration: none;
+  color: #61dafb;
+  background: #242424;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.services a:hover {
+  background: #333;
+}
