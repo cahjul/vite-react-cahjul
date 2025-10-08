@@ -18,6 +18,7 @@ function App() {
     "chat.shzl.de",
     "db.shzl.de",
     "hi.shzl.de",
+    "indahgo.shzl.de",
     "lib.shzl.de",
     "panel.shzl.de",
     "todo.shzl.de",
